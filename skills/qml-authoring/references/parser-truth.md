@@ -23,6 +23,7 @@
   - 属性块写在 `{...}`
 - 若 `label` 不符合 `Q...`，parser 会自动生成 `Q1/Q2/...`
 - 重复 QID 会报 `Duplicate QID`
+- 题头属性可包含自定义键值；当前文档显式约定了 `scoring=traits` 这一语义
 
 ### answer_time
 
@@ -32,8 +33,16 @@
 ### 选项题
 
 - `single` / `multiple` 必须有选项
-- `single` 必须恰好一个正确答案
+- `single` 默认必须恰好一个正确答案
+- 当 `single` 的题头属性包含 `scoring=traits` 时，该题表示量表题：
+  - 不需要正确答案
+  - 不得出现 `*`
+  - 得分来自选项上的 `traits`
+  - 仍然只能选择一个选项
 - `multiple` 至少一个正确答案
+- 选项尾部可带属性块
+- `traits` 的约定格式为 `KEY:INT[,KEY:INT...]`
+- trait 量表题的最终人格编码推导属于消费端逻辑，不属于 parser 本身
 
 ### 简答题
 

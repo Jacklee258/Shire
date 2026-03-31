@@ -31,6 +31,7 @@
 - QML 文档保持 `format: qml-v2`，并建议同时维护 `schema_version: 2`、`question_count`、`question_counts`、`estimated_duration_minutes`。
 - 资源文件只放在当前 quiz 目录下的 `assets/` 中，题面引用统一使用 `./assets/...`。
 - `single` 与 `multiple` 题使用 `## Qn [type] (points)`，`short` 题使用 `## Qn [short] {max=points, ...}`。
+- `single` 若使用 `{scoring=traits}`，则表示无正确答案的量表题；这类题统一使用 `(0)`，且不得使用 `*`。
 - `short` 题必须包含 `[rubric]...[/rubric]`。
 - `answer_time` 使用 `s`、`m`、`h`，并保持在 parser 允许范围内。
 - 首题前和末题后如需展示欢迎图或结束图，只放单独一张 Markdown 图片。
@@ -40,5 +41,6 @@
 - 检查题号是否连续且唯一。
 - 检查 `[rubric]` 与 `[/rubric]` 是否成对闭合。
 - 检查图片路径是否都指向当前 quiz 的 `./assets/`。
+- 检查启用 `{scoring=traits}` 的 `single` 题是否没有 `*`，且选项 `traits` 只使用约定的 trait key。
 - 检查题量统计与预计时长是否和实际题目一致。
 - 若改动仓库结构或 manifest，确认 `README.md` 中的说明没有过期。

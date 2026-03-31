@@ -8,15 +8,18 @@
 .
 ├── md-quiz-repo.yaml
 ├── quizzes/
-│   └── common-test-2025/
-│       ├── quiz.md
-│       └── assets/
+│   ├── common-test-2025/
+│   │   ├── quiz.md
+│   │   └── assets/
+│   └── personality-type-5d-80/
+│       └── quiz.md
 └── skills/
 ```
 
 ## Quiz 列表
 
 - `common-test-2025`: 共性能力测试2025
+- `personality-type-5d-80`: 人格类型测试（五维版·80题）
 
 ## Skills
 

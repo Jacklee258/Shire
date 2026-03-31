@@ -43,6 +43,7 @@ estimated_duration_minutes: 34
 ## Q1 [single] (5) {answer_time=45s}
 ## Q2 [multiple] (6) {partial=true}
 ## Q3 [short] {max=10, answer_time=10m}
+## Q4 [single] (0) {scoring=traits, answer_time=20s}
 ```
 
 规则：
@@ -55,6 +56,10 @@ estimated_duration_minutes: 34
   - `partial=true`
   - `media=./assets/q1.png`
   - `answer_time=45s`
+  - `scoring=traits`
+- 默认情况下，`single` 是“有正确答案的单选题”
+- 当 `single` 使用 `{scoring=traits}` 时，它表示“无正确答案的量表题”
+- trait 量表题推荐使用 `(0)`，因为其得分来自选项权重，而不是答题正确性
 
 ## 题干与图片
 
@@ -71,10 +76,28 @@ estimated_duration_minutes: 34
 - B*) 正确选项
 ```
 
+trait 量表题示例：
+
+```markdown
+## Q1 [single] (0) {scoring=traits, answer_time=20s}
+
+我通常会在做决定前先把计划排到比较细。
+
+- A) 非常同意 {traits=J:2}
+- B) 比较同意 {traits=J:1}
+- C) 中立
+- D) 比较不同意 {traits=P:1}
+- E) 非常不同意 {traits=P:2}
+```
+
 规则：
 
-- 正确答案在选项字母后加 `*`
-- 可追加 traits / points 等属性
+- 默认模式下，正确答案在选项字母后加 `*`
+- `single` + `{scoring=traits}` 模式下不得出现 `*`
+- trait 量表题的得分来自选项上的 `traits`
+- 选项可追加 traits / points 等属性
+- `traits` 的格式为 `KEY:INT[,KEY:INT...]`
+- 当题目使用 `{scoring=traits}` 时，建议至少一个非中立选项带 `traits`
 
 ## 简答题
 
@@ -146,4 +169,35 @@ estimated_duration_minutes: 12
 [/rubric]
 
 ![bye](./assets/thanks.png)
+```
+
+## 人格量表示例
+
+```markdown
+---
+id: personality-type-5d-80
+title: 人格类型测试（五维版·80题）
+description: |
+  基于公开人格维度框架设计的原创量表。
+  本试卷共 80 题，均为 5 级同意度单选题，预计 27 分钟完成。
+schema_version: 2
+format: qml-v2
+question_count: 80
+question_counts:
+  single: 80
+  multiple: 0
+  short: 0
+estimated_duration_minutes: 27
+trait:
+  dimensions: [I, E, S, N, T, F, J, P, A, TU]
+---
+
+## Q1 [single] (0) {scoring=traits, answer_time=20s}
+我通常会在做决定前先把计划排到比较细。
+
+- A) 非常同意 {traits=J:2}
+- B) 比较同意 {traits=J:1}
+- C) 中立
+- D) 比较不同意 {traits=P:1}
+- E) 非常不同意 {traits=P:2}
 ```
