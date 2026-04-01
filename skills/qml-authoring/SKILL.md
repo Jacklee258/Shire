@@ -9,6 +9,7 @@ description: Use this skill when authoring, reviewing, fixing, or documenting QM
 
 在以下场景优先使用这个 skill：
 
+- 若任务同时涉及 quiz 仓库规范和 QML 定义，优先先看 [../md-quiz/SKILL.md](../md-quiz/SKILL.md) 作为总入口
 - 编写或修订 `quiz.md` 内容
 - 维护 `quiz.md` Front Matter，包括 `title`、`description`、`tags`
 - 排查 QML 解析错误
