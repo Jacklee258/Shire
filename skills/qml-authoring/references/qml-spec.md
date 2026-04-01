@@ -15,6 +15,7 @@ title: 共性能力测评
 description: |
   面向候选人的基础能力测评。
   本试卷共 10 题，其中单选 6 题、多选 2 题、简答 2 题，预计 34 分钟完成。
+tags: [common-ability, recruiting]
 schema_version: 2
 format: qml-v2
 question_count: 10
@@ -30,7 +31,9 @@ estimated_duration_minutes: 34
 
 - `id`：在采用 `quiz-repo-spec` 的仓库中，应与目录名一致
 - `title` / `description` / `format`：按需填写
+- `tags`：可选，推荐写成 YAML 字符串列表，用于分类、检索和筛选
 - 推荐头部补充：
+  - `tags`
   - `schema_version: 2`
   - `question_count`
   - `question_counts`
@@ -141,6 +144,7 @@ title: 共性能力测评
 description: |
   面向候选人的基础能力测评。
   本试卷共 2 题，其中单选 1 题、多选 0 题、简答 1 题，预计 12 分钟完成。
+tags: [common-ability, demo]
 schema_version: 2
 format: qml-v2
 question_count: 2
@@ -180,6 +184,7 @@ title: 人格类型测试（五维版·80题）
 description: |
   基于公开人格维度框架设计的原创量表。
   本试卷共 80 题，均为 5 级同意度单选题，预计 27 分钟完成。
+tags: [personality, mbti-style, traits]
 schema_version: 2
 format: qml-v2
 question_count: 80

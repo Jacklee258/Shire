@@ -4,6 +4,7 @@ title: 共性能力测试2025
 description: |
   本试卷包含基础能力与性向维度两部分内容。
   全卷共 62 题，其中单选题 60 题、简答题 2 题，预计 45 分钟完成。
+tags: [common-ability, aptitude, mixed-discipline, recruitment]
 schema_version: 2
 format: qml-v2
 question_count: 62

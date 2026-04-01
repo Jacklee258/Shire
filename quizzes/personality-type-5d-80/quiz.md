@@ -6,6 +6,7 @@ description: |
   本试卷共 80 题，均为 5 级同意度单选题，预计 27 分钟完成。
   每题按 traits 累计到 I/E、S/N、T/F、J/P、A/TU 五组维度，最终输出四字母类型和 -A/-T。
   若同组维度平分，则依次比较 +2 次数、+1 次数；若仍平分，固定落位 I/S/T/J/A。
+tags: [personality, mbti-style, self-assessment, five-dimensions, traits]
 schema_version: 2
 format: qml-v2
 question_count: 80

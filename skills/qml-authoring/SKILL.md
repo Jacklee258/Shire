@@ -10,6 +10,7 @@ description: Use this skill when authoring, reviewing, fixing, or documenting QM
 在以下场景优先使用这个 skill：
 
 - 编写或修订 `quiz.md` 内容
+- 维护 `quiz.md` Front Matter，包括 `title`、`description`、`tags`
 - 排查 QML 解析错误
 - 更新 `qml.md` 或 QML 示例
 - 评审 QML 语法与 parser 行为是否一致
