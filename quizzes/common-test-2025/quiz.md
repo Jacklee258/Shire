@@ -28,14 +28,6 @@ llm:
     题目：{{question}}
     评分标准：{{rubric}}
     考生回答：{{answer}}
-trait:
-  dimensions: [I, E, S, N, T, F, J, P]
-  chart:
-    type: mermaid
-    template: |
-      pie title 维度得分
-      "I" : {{I}} "E" : {{E}} "S" : {{S}} "N" : {{N}}
-      "T" : {{T}} "F" : {{F}} "J" : {{J}} "P" : {{P}}
 ---
 
 ![intro](./assets/54.jpg)

@@ -18,13 +18,32 @@ question_counts:
 estimated_duration_minutes: 20
 trait:
   dimensions: [EXP, STD, AUTO, CTRL, FAST, VERIFY, OPEN, SOLO, ITER, FIXED]
-  chart:
-    type: mermaid
-    template: |
-      pie title AI 工作方式画像
-      "探索尝新 EXP" : {{EXP}} "稳定沿用 STD" : {{STD}} "自动化委托 AUTO" : {{AUTO}} "手动掌控 CTRL" : {{CTRL}}
-      "快速试用 FAST" : {{FAST}} "审慎验证 VERIFY" : {{VERIFY}} "开放协同 OPEN" : {{OPEN}} "独立闭环 SOLO" : {{SOLO}}
-      "迭代学习 ITER" : {{ITER}} "固定流程 FIXED" : {{FIXED}}
+  dimension_meanings:
+    EXP: 更偏向主动尝试新工具、新流程和新方法。
+    STD: 更偏向沿用已验证做法，优先追求稳定和可复制性。
+    AUTO: 更偏向在边界清晰时把任务委托给 AI 或自动化流程。
+    CTRL: 更偏向手动掌控关键步骤，降低黑盒不确定性。
+    FAST: 更偏向先快速试跑、尽快看到结果，再逐步优化。
+    VERIFY: 更偏向先验证来源、规则和风险，再进入正式使用。
+    OPEN: 更偏向公开分享经验、促进团队协作和方法扩散。
+    SOLO: 更偏向先独立摸索、形成闭环后再决定是否分享。
+    ITER: 更偏向持续复盘和迭代，愿意不断调整 prompt、工具和流程。
+    FIXED: 更偏向固化流程和稳定执行，减少频繁变化带来的成本。
+  analysis_guidance:
+    paired_dimensions:
+      - EXP/STD：比较探索尝新与稳定沿用的主导倾向。
+      - AUTO/CTRL：比较自动化委托与手动掌控的主导倾向。
+      - FAST/VERIFY：比较快速试用与审慎验证的主导倾向。
+      - OPEN/SOLO：比较开放协同与独立闭环的主导倾向。
+      - ITER/FIXED：比较迭代学习与固定流程的主导倾向。
+    scoring_method:
+      - 将每组对立维度分别累计总分，取分高的一侧作为该组主倾向。
+      - 若同组平分，则依次比较 +2 次数、+1 次数；若仍平分，固定落位 STD/CTRL/VERIFY/OPEN/ITER。
+      - 认知判断题单独统计，不并入 traits 画像结果。
+    interpretation:
+      - 优先看成对维度的差值，差值越大说明工作方式偏好越稳定。
+      - 若差值较小，建议解释为具备双向切换能力，而不是简单贴单一风格标签。
+      - 分析时应结合岗位、任务类型和团队协作环境，不宜脱离具体工作场景孤立解读。
 ---
 
 ## Q1 [single] (0) {scoring=traits, answer_time=20s}

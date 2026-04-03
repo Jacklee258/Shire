@@ -40,6 +40,34 @@ estimated_duration_minutes: 34
   - `estimated_duration_minutes`
 - QML 语法层不定义 manifest、repo path、目录结构
 
+### trait 元数据（可选）
+
+当问卷包含 `single + {scoring=traits}` 的量表题时，可在 Front Matter 中补充 `trait` 元数据。
+
+推荐结构：
+
+```yaml
+trait:
+  dimensions: [I, E, S, N, T, F, J, P]
+  dimension_meanings:
+    I: 更偏向独立思考、独处恢复和表达前先整理。
+    E: 更偏向外部互动、即时反馈和从交流中获得能量。
+  analysis_guidance:
+    paired_dimensions:
+      - I/E：比较独立内化与外向互动的主导倾向。
+    scoring_method:
+      - 将每组对立维度分别累计总分，取分高的一侧作为主倾向。
+    interpretation:
+      - 优先看成对维度的差值，而不是只看单个标签。
+```
+
+说明：
+
+- `trait` 只应在问卷实际包含 traits 量表题时出现；若题面没有 `scoring=traits` 或选项级 `traits`，应删除整段 `trait` 元数据
+- `dimensions` 用于声明允许出现的 trait key
+- `dimension_meanings` 推荐显式写明每个维度的含义，方便消费端解释
+- `analysis_guidance` 推荐写明成对维度、计分方式和解释建议
+
 ## 题头格式
 
 ```markdown
@@ -195,6 +223,30 @@ question_counts:
 estimated_duration_minutes: 27
 trait:
   dimensions: [I, E, S, N, T, F, J, P, A, TU]
+  dimension_meanings:
+    I: 更偏向独立思考、独处恢复精力、表达前先内化整理。
+    E: 更偏向外部互动、即时表达、从社交和讨论中获得能量。
+    S: 更偏向经验、事实与可验证细节，重视现实可行性。
+    N: 更偏向可能性、趋势和抽象联想，重视概念与潜在机会。
+    T: 更偏向一致标准、逻辑推理和客观判断。
+    F: 更偏向关系感受、共情反馈和人的影响。
+    J: 更偏向计划、秩序、提前安排和明确边界。
+    P: 更偏向灵活应变、边走边看和根据变化调整。
+    A: 更偏向情绪稳定、自我接纳和压力下保持平衡。
+    TU: 更偏向敏感波动、反复反思和更强的不确定感受。
+  analysis_guidance:
+    paired_dimensions:
+      - I/E：比较独处内化与外向互动的主导倾向。
+      - S/N：比较经验务实与抽象联想的主导倾向。
+      - T/F：比较逻辑标准与关系感受的主导倾向。
+      - J/P：比较计划秩序与灵活应变的主导倾向。
+      - A/TU：比较稳定果断与敏感波动的主导倾向。
+    scoring_method:
+      - 将每组对立维度分别累计总分，取分高的一侧作为该组主倾向。
+      - 若同组平分，则依次比较 +2 次数、+1 次数；若仍平分，固定落位 I/S/T/J/A。
+    interpretation:
+      - 优先看每组两侧的相对差值，差值越大说明偏好越稳定。
+      - 若某组差值很小，更适合解释为情境依赖，而不是强行贴类型标签。
 ---
 
 ## Q1 [single] (0) {scoring=traits, answer_time=20s}

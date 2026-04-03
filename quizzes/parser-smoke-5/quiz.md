@@ -27,6 +27,17 @@ llm:
     考生回答：{{answer}}
 trait:
   dimensions: [PLAN, FLEX]
+  dimension_meanings:
+    PLAN: 更偏向先列字段、边界和步骤，再开始实现或配置。
+    FLEX: 更偏向先快速试运行，再根据反馈迭代调整。
+  analysis_guidance:
+    paired_dimensions:
+      - PLAN/FLEX：比较结构化规划与快速试错的主导倾向。
+    scoring_method:
+      - 累计 PLAN 与 FLEX 的总分，取分高的一侧作为主偏好。
+    interpretation:
+      - 差值较大说明解析或配置习惯更稳定。
+      - 差值接近说明两种工作方式都可接受，适合按任务选择。
 ---
 
 ![intro](./assets/test.png)
