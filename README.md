@@ -13,7 +13,12 @@
 │   │   └── assets/
 │   ├── ai-workstyle-50/
 │   │   └── quiz.md
-│   └── personality-type-5d-80/
+│   ├── personality-type-5d-80/
+│   │   └── quiz.md
+│   ├── parser-smoke-5/
+│   │   ├── quiz.md
+│   │   └── assets/
+│   └── tech-media-ops-intern-screening/
 │       └── quiz.md
 └── skills/
 ```
@@ -23,8 +28,12 @@
 - `common-test-2025`: 共性能力测试2025
 - `ai-workstyle-50`: AI 时代工作方式问卷（50题）
 - `personality-type-5d-80`: 人格类型测试（五维版·80题）
+- `parser-smoke-5`: 系统解析测试问卷（5题）
+- `tech-media-ops-intern-screening`: 技术类自媒体运营实习生招聘初筛问卷
 
 每份 `quiz.md` 的 Front Matter 现支持 `tags`，用于分类、检索和后续筛选。
+其中 `common-test-2025` 与 `tech-media-ops-intern-screening` 属于招聘/筛选型混合问卷。
+`parser-smoke-5` 用于验证 welcome/end image、media、traits、`[rubric]`、`[llm]` 等解析要素。
 
 ## Skills
 
