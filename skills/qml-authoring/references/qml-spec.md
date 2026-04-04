@@ -154,6 +154,8 @@ prompt_template=请只输出分数数字。
 
 - 首题前仅支持单独一张 Markdown 图片，映射为 `welcome_image`
 - 末题后仅支持单独一张 Markdown 图片，映射为 `end_image`
+- `intro` / `outro` 图片都属于可选项，不是问卷必填内容
+- 若使用首图或尾图，建议优先使用横幅图，推荐宽高比约为 `2:1`
 
 示例：
 

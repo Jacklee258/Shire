@@ -934,4 +934,4 @@ $0.6\times0.1\times0.7\times0.4\times0.7\times0.5=0.00588$。
    - 部分得分: 内容零散、堆砌观点，没有清晰逻辑
 [/rubric]
 
-![bye](./assets/1759167.jpg)
+![outro](./assets/1759167.jpg)
