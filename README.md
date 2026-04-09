@@ -35,6 +35,13 @@
 其中 `common-test-2025` 与 `tech-media-ops-intern-screening` 属于招聘/筛选型混合问卷。
 `parser-smoke-5` 用于验证 welcome/end image、media、traits、`[rubric]`、`[llm]` 等解析要素。
 
+## 新增问卷时的同步要求
+
+创建新问卷时，除了新增 `quizzes/<quiz_id>/quiz.md` 与所需的 `assets/` 目录，还必须同步更新以下文件：
+
+- `md-quiz-repo.yaml`：在 `quizzes` 列表中补入 `quizzes/<quiz_id>/quiz.md`
+- `README.md`：同步更新仓库结构示例、Quiz 列表以及其他受影响的说明，避免文档与仓库实际内容不一致
+
 ## Skills
 
 仓库内当前维护一个推荐安装的总入口 skill，以及两份底层 skill：
@@ -132,6 +139,7 @@
 
 1. 先确定用途：筛选、画像、培训还是自我认知
 2. 再确定建模：知识题、量表题还是混合题
-3. 为问卷补齐 Front Matter：`id`、`title`、`description`、`tags`、`question_count`、`question_counts`、`estimated_duration_minutes`
-4. 若是倾向类问卷，优先用 `single + {scoring=traits}`
-5. 若是能力类问卷，优先用 `single` / `short`
+3. 创建 `quizzes/<quiz_id>/quiz.md` 后，立即同步更新 `md-quiz-repo.yaml` 与 `README.md`
+4. 为问卷补齐 Front Matter：`id`、`title`、`description`、`tags`、`question_count`、`question_counts`、`estimated_duration_minutes`
+5. 若是倾向类问卷，优先用 `single + {scoring=traits}`
+6. 若是能力类问卷，优先用 `single` / `short`
