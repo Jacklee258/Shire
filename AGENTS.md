@@ -28,6 +28,7 @@
 
 - `md-quiz-repo.yaml` 的 `schema_version` 保持为 `2`。
 - `md-quiz-repo.yaml` 中的 quiz 路径必须是 `quizzes/<quiz_id>/quiz.md`。
+- 新增或删除 `quizzes/<quiz_id>/` 问卷后，必须同步更新 `md-quiz-repo.yaml` 中的 `quizzes` 列表，并更新 `README.md` 中对应的结构示例、问卷列表或相关说明。
 - `quizzes/<quiz_id>/quiz.md` 的 Front Matter `id` 必须与目录名 `<quiz_id>` 一致。
 - `quizzes/<quiz_id>/quiz.md` 可使用 `tags` 保存 quiz 级标签，推荐写成 YAML 字符串列表，并与问卷主题保持一致。
 - QML 文档保持 `format: qml-v2`，并建议同时维护 `schema_version: 2`、`question_count`、`question_counts`、`estimated_duration_minutes`。
@@ -46,4 +47,5 @@
 - 检查 `tags` 是否为 YAML 字符串列表，且能准确描述该问卷主题。
 - 检查启用 `{scoring=traits}` 的 `single` 题是否没有 `*`，且选项 `traits` 只使用约定的 trait key。
 - 检查题量统计与预计时长是否和实际题目一致。
+- 若新增、删除或重命名问卷，检查 `md-quiz-repo.yaml` 与 `README.md` 是否已同步反映该变更。
 - 若改动仓库结构或 manifest，确认 `README.md` 中的说明没有过期。
