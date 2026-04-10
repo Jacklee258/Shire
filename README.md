@@ -6,18 +6,21 @@
 
 ```text
 .
+├── AGENTS.md
 ├── md-quiz-repo.yaml
 ├── quizzes/
-│   ├── common-test-2025/
-│   │   ├── quiz.md
-│   │   └── assets/
 │   ├── ai-workstyle-50/
+│   │   └── quiz.md
+│   ├── chip-distribution/
+│   │   └── quiz.md
+│   ├── common-test-2025/
+│   │   ├── assets/
+│   │   └── quiz.md
+│   ├── parser-smoke-5/
+│   │   ├── assets/
 │   │   └── quiz.md
 │   ├── personality-type-5d-80/
 │   │   └── quiz.md
-│   ├── parser-smoke-5/
-│   │   ├── quiz.md
-│   │   └── assets/
 │   └── tech-media-ops-intern-screening/
 │       └── quiz.md
 └── skills/
