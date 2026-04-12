@@ -11,15 +11,23 @@
 ├── quizzes/
 │   ├── ai-workstyle-50/
 │   │   └── quiz.md
+│   ├── career-interest-24/
+│   │   └── quiz.md
 │   ├── chip-distribution/
 │   │   └── quiz.md
 │   ├── common-test-2025/
 │   │   ├── assets/
 │   │   └── quiz.md
+│   ├── leadership-execution-24/
+│   │   └── quiz.md
+│   ├── learning-style-growth-path-24/
+│   │   └── quiz.md
 │   ├── parser-smoke-5/
 │   │   ├── assets/
 │   │   └── quiz.md
 │   ├── personality-type-5d-80/
+│   │   └── quiz.md
+│   ├── team-collaboration-style-24/
 │   │   └── quiz.md
 │   └── tech-media-ops-intern-screening/
 │       └── quiz.md
@@ -29,10 +37,14 @@
 ## Quiz List
 
 - `ai-workstyle-50`: AI 时代工作方式问卷（50题）
+- `career-interest-24`: 职业兴趣问卷（24题）
 - `chip-distribution`: 筹码分布入门测验（30题）
 - `common-test-2025`: 共性能力测试 2025
+- `leadership-execution-24`: 领导力与执行力倾向问卷（24题）
+- `learning-style-growth-path-24`: 学习风格与成长路径问卷（24题）
 - `parser-smoke-5`: 系统解析测试问卷（5题）
 - `personality-type-5d-80`: 人格类型测试（五维版·80题）
+- `team-collaboration-style-24`: 团队协作风格问卷（24题）
 - `tech-media-ops-intern-screening`: 技术类自媒体运营实习生招聘初筛问卷
 
 ## Conventions
@@ -50,23 +62,20 @@
 
 ## Current Priorities
 
-当前已经落地的问卷：
+当前已经补齐 `README.md` 中规划的 4 个方向：
 
-- `ai-workstyle-50`
-- `chip-distribution`
+- `team-collaboration-style-24`
+- `career-interest-24`
+- `leadership-execution-24`
+- `learning-style-growth-path-24`
 
-后续优先建设以下方向：
+这些新增问卷的共同点：
 
-1. 团队协作风格问卷
-2. 职业兴趣问卷
-3. 领导力与执行力倾向问卷
-4. 学习风格与成长路径问卷
+1. 统一采用 `single + {scoring=traits}` 建模
+2. 可与已有 `ai-workstyle-50`、`personality-type-5d-80` 组成画像组合包
+3. 适合用于招聘、培训、组织发展与自我认知场景的前置探索
 
-这些方向的共同点：
-
-- 可以和现有问卷组成组合包
-- 适合用 `single + traits` 建模
-- 可直接面向招聘、培训、组织发展场景
+后续若继续扩展，建议优先做岗位细分版本或行业场景版本，而不是重复通用量表。
 
 ## Build Notes
 
