@@ -18,6 +18,8 @@
 │   ├── common-test-2025/
 │   │   ├── assets/
 │   │   └── quiz.md
+│   ├── hnw-strategy-fit-14/
+│   │   └── quiz.md
 │   ├── leadership-execution-24/
 │   │   └── quiz.md
 │   ├── learning-style-growth-path-24/
@@ -40,6 +42,7 @@
 - `career-interest-24`: 职业兴趣问卷（24题）
 - `chip-distribution`: 筹码分布入门测验（30题）
 - `common-test-2025`: 共性能力测试 2025
+- `hnw-strategy-fit-14`: 高净值客户策略适配画像问卷（14题）
 - `leadership-execution-24`: 领导力与执行力倾向问卷（24题）
 - `learning-style-growth-path-24`: 学习风格与成长路径问卷（24题）
 - `parser-smoke-5`: 系统解析测试问卷（5题）
@@ -76,6 +79,8 @@
 3. 适合用于招聘、培训、组织发展与自我认知场景的前置探索
 
 后续若继续扩展，建议优先做岗位细分版本或行业场景版本，而不是重复通用量表。
+
+当前新增的 `hnw-strategy-fit-14` 与以上几份不同，它不是投资适当性自动判定工具，而是面向顾问沟通场景的客户画像问卷，用来辅助理解回撤约束、流动性诉求、省心偏好与策略可解释性偏好。
 
 ## Build Notes
 
