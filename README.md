@@ -49,6 +49,7 @@
 - `personality-type-5d-80`: 人格类型测试（五维版·80题）
 - `team-collaboration-style-24`: 团队协作风格问卷（24题）
 - `tech-media-ops-intern-screening`: 技术类自媒体运营实习生招聘初筛问卷
+- `im-futures-intake-14`: IM 合约交易需求首访前置问卷（14题）
 
 ## Conventions
 
