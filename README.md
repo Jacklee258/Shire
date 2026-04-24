@@ -33,6 +33,8 @@
 │   │   └── quiz.md
 │   ├── team-collaboration-style-24/
 │   │   └── quiz.md
+│   ├── youth-brain-challenge-24/
+│   │   └── quiz.md
 │   └── tech-media-ops-intern-screening/
 │       └── quiz.md
 └── skills/
@@ -51,6 +53,7 @@
 - `parser-smoke-5`: 系统解析测试问卷（5题）
 - `personality-type-5d-80`: 人格类型测试（五维版·80题）
 - `team-collaboration-style-24`: 团队协作风格问卷（24题）
+- `youth-brain-challenge-24`: 少年脑力挑战：初中生思维力闯关（24题）
 - `tech-media-ops-intern-screening`: 技术类自媒体运营实习生招聘初筛问卷
 - `im-futures-intake-14`: IM 合约交易需求首访前置问卷（14题）
 
@@ -87,6 +90,8 @@
 当前新增的 `hnw-strategy-fit-14` 与以上几份不同，它不是投资适当性自动判定工具，而是面向顾问沟通场景的客户画像问卷，用来辅助理解回撤约束、流动性诉求、省心偏好与策略可解释性偏好。
 
 当前还新增了 `grade7-history-midterm-gd-2026`，它采用广东历史卷常见的 `30 道选择题 + 3 道材料题` 结构，适合七年级下学期期中复习、阶段检测和课堂讲评使用。
+
+当前新增的 `youth-brain-challenge-24` 面向初中生家庭的一次性趣味测评冷启动，包装为“少年脑力挑战”，用于验证完成率、分享率和家长反馈，不使用“智商测试”或诊断式表达。
 
 ## Build Notes
 
