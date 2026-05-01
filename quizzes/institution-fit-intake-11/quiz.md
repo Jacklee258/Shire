@@ -67,7 +67,7 @@ trait:
 - D) 已使用专业终端或量化平台，希望进一步形成内部流程 {traits=FIT:2,GOV:1}
 - E) 暂时没有稳定的投研或回测流程 {traits=NURTURE:2}
 
-## Q4 [multiple] (0) {partial=true, answer_time=45s}
+## Q4 [multiple] (1) {partial=true, answer_time=45s}
 
 当前主要研究、服务或交易哪些标的？可多选。
 
@@ -81,9 +81,9 @@ trait:
 - H*) 可转债
 - I*) 基金 / FOF / 组合
 - J*) 其他明确市场
-- K) 暂不确定
+- K*) 暂不确定
 
-## Q5 [multiple] (0) {partial=true, answer_time=45s}
+## Q5 [multiple] (1) {partial=true, answer_time=45s}
 
 当前已使用或计划接入哪些数据源？可多选。
 
@@ -95,9 +95,9 @@ trait:
 - F*) 券商柜台 / 极速柜台
 - G*) 交易所授权行情 / 专业行情商
 - H*) 内部数据
-- I) 暂不确定
+- I*) 暂不确定
 
-## Q6 [multiple] (0) {partial=true, answer_time=45s}
+## Q6 [multiple] (1) {partial=true, answer_time=45s}
 
 当前回测或研究验证最明显的问题是什么？可多选。
 
@@ -106,9 +106,9 @@ trait:
 - C*) 结果散落在脚本、表格或个人电脑里
 - D*) 缺少统一复盘口径和可沉淀的研究记录
 - E*) 暂时没有稳定回测流程
-- F) 暂时没有明显回测痛点
+- F*) 暂时没有明显回测痛点
 
-## Q7 [multiple] (0) {partial=true, answer_time=45s}
+## Q7 [multiple] (1) {partial=true, answer_time=45s}
 
 当前信号或策略运行最明显的问题是什么？可多选。
 
@@ -117,9 +117,9 @@ trait:
 - C*) 历史信号无法完整回填、追溯或复盘
 - D*) 信号、评分、预警和复盘没有统一看板
 - E*) 缺少定时调度、权限分工或任务交接机制
-- F) 暂时没有明确的信号管理需求
+- F*) 暂时没有明确的信号管理需求
 
-## Q8 [multiple] (0) {partial=true, answer_time=45s}
+## Q8 [multiple] (1) {partial=true, answer_time=45s}
 
 贵机构是否需要以下风控、留痕或管理能力？可多选。
 
@@ -128,9 +128,9 @@ trait:
 - C*) 任务执行、失败重试和异常原因留痕
 - D*) 风险阈值、持仓暴露或异常波动提醒
 - E*) 审计、复盘或管理层报告
-- F) 暂时不需要
+- F*) 暂时不需要
 
-## Q9 [multiple] (0) {partial=true, answer_time=45s}
+## Q9 [multiple] (1) {partial=true, answer_time=45s}
 
 如果进入小范围 PoC，贵机构目前可以提供哪些材料或条件？可多选。
 
@@ -139,7 +139,7 @@ trait:
 - C*) 至少 1 个可用数据源或数据样例
 - D*) 1 名业务 owner 参与需求确认与验收
 - E*) 可以提供历史样例、日报、复盘表或现有流程截图
-- F) 暂时无法提供
+- F*) 暂时无法提供
 
 ## Q10 [single] (0) {scoring=traits, answer_time=30s}
 
