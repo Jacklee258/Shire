@@ -1,18 +1,18 @@
 ---
 id: institution-fit-intake-11
-title: 量化投研适配性调研
+title: 量化投研适配调研
 description: |
   面向机构客户扫码进入在线客服或预约 Demo 前的前置诊断问卷。
-  本试卷共 13 题，其中单选题 4 题、多选题 9 题，预计 5 分钟完成。
-  重点收集客户类型、团队规模、当前工具、主要市场、数据源、数据映射复杂度、回测痛点、信号管理痛点、风控留痕需求、PoC 条件、当前模式成熟度、需求触发与决策链路，用于判断机构适配度和准备后续沟通。
+  本试卷共 12 题，其中单选题 4 题、多选题 8 题，预计 5 分钟完成。
+  重点收集客户类型、团队规模、当前工具、主要市场、数据源、回测痛点、信号管理痛点、风控留痕需求、PoC 条件、当前模式成熟度、需求触发与决策链路，用于判断机构适配度和准备后续沟通。
   本问卷只用于需求诊断和 Demo 准备，不构成投资建议、收益承诺或代客理财服务。
 tags: [institution-fit, quant-infra, customer-discovery, pre-sales, appointment]
 schema_version: 2
 format: qml-v2
-question_count: 13
+question_count: 12
 question_counts:
   single: 4
-  multiple: 9
+  multiple: 8
   short: 0
 estimated_duration_minutes: 5
 trait:
@@ -100,17 +100,6 @@ trait:
 
 ## Q6 [multiple] (1) {partial=true, answer_time=45s}
 
-结合当前标的和数据来源，Demo 或 PoC 前最需要优先确认哪些数据映射问题？可多选。
-
-- A*) A 股日频数据、复权、行业/板块分类和标的池口径
-- B*) 实时行情、交易接口、券商权限或柜台接入条件
-- C*) 期货/期权合约映射、主力连续、换月、保证金和手续费口径
-- D*) 港美股行情权限、盘前盘后、复权、公司行动和交易日历
-- E*) 可转债、基金、FOF 或组合类数据的净值、持仓、归因和披露滞后
-- F*) 暂时不确定，需要先由售前协助梳理
-
-## Q7 [multiple] (1) {partial=true, answer_time=45s}
-
 当前回测或研究验证最明显的问题是什么？可多选。
 
 - A*) 回测结果难复现，换人或换环境后结果不一致
@@ -120,7 +109,7 @@ trait:
 - E*) 暂时没有稳定回测流程
 - F*) 暂时没有明显回测痛点
 
-## Q8 [multiple] (1) {partial=true, answer_time=45s}
+## Q7 [multiple] (1) {partial=true, answer_time=45s}
 
 当前信号或策略运行最明显的问题是什么？可多选。
 
@@ -130,7 +119,7 @@ trait:
 - D*) 信号、评分、预警和复盘没有统一看板
 - E*) 暂时没有明确的信号管理需求
 
-## Q9 [multiple] (1) {partial=true, answer_time=45s}
+## Q8 [multiple] (1) {partial=true, answer_time=45s}
 
 贵机构是否需要以下风控、留痕或管理能力？可多选。
 
@@ -141,7 +130,7 @@ trait:
 - E*) 审计和复盘报告
 - F*) 暂时不需要
 
-## Q10 [multiple] (1) {partial=true, answer_time=45s}
+## Q9 [multiple] (1) {partial=true, answer_time=45s}
 
 如果进入小范围 PoC，贵机构目前可以提供哪些材料或条件？可多选。
 
@@ -151,7 +140,7 @@ trait:
 - D*) 1 名业务 owner 参与验收
 - E*) 暂时无法提供
 
-## Q11 [single] (0) {scoring=traits, answer_time=30s}
+## Q10 [single] (0) {scoring=traits, answer_time=30s}
 
 当前研究或交易模式更接近哪种状态？
 
@@ -161,7 +150,7 @@ trait:
 - D) 运营管理需要 {traits=GOV:2}
 - E) 暂不方便披露 {traits=NURTURE:1}
 
-## Q12 [multiple] (1) {partial=true, answer_time=45s}
+## Q11 [multiple] (1) {partial=true, answer_time=45s}
 
 您/贵机构希望搭建量化投研基础设施解决什么问题？可多选。
 
@@ -172,7 +161,7 @@ trait:
 - E*) 替代零散脚本
 - F*) 增强风控留痕
 
-## Q13 [single] (0) {scoring=traits, answer_time=30s}
+## Q12 [single] (0) {scoring=traits, answer_time=30s}
 
 本事项通常由谁推动或决策？
 
