@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800" role="img" aria-labelledby="title desc">
+  <title id="title">机构适配需求诊断邀请卡</title>
+  <desc id="desc">正式科技感客户邀请卡，提示客户扫码进入在线客服和预约页面完成需求诊断。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#08111f"/>
+      <stop offset="0.48" stop-color="#10243a"/>
+      <stop offset="1" stop-color="#071318"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#42d7ff"/>
+      <stop offset="0.55" stop-color="#7cf6c8"/>
+      <stop offset="1" stop-color="#e0c36b"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse">
+      <path d="M54 0H0V54" fill="none" stroke="#9cc9d4" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="800" fill="url(#bg)"/>
+  <rect width="1600" height="800" fill="url(#grid)"/>
+
+  <path d="M96 626C274 520 354 606 524 488C670 386 760 196 958 238C1120 272 1160 418 1508 316" fill="none" stroke="#42d7ff" stroke-opacity="0.16" stroke-width="2"/>
+  <path d="M98 674C300 548 396 646 580 520C744 408 822 260 1000 294C1176 328 1238 510 1504 398" fill="none" stroke="#7cf6c8" stroke-opacity="0.18" stroke-width="2"/>
+
+  <rect x="80" y="72" width="1440" height="656" rx="34" fill="#071520" fill-opacity="0.82" stroke="#b6e9f4" stroke-opacity="0.22"/>
+  <rect x="116" y="108" width="1368" height="584" rx="24" fill="none" stroke="url(#line)" stroke-opacity="0.58" stroke-width="2"/>
+
+  <g transform="translate(160 152)">
+    <rect x="0" y="0" width="326" height="38" rx="19" fill="#102f3c" stroke="#42d7ff" stroke-opacity="0.35"/>
+    <text x="24" y="26" fill="#c5f4ff" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="20" letter-spacing="1">机构客户专属入口</text>
+
+    <text x="0" y="124" fill="#f4fbff" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="62" font-weight="700">机构适配需求诊断</text>
+    <text x="0" y="188" fill="#b7d6df" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="28">量化研发 · 数据接入 · 回测复盘 · 风控留痕 · Demo 预约</text>
+
+    <rect x="0" y="250" width="760" height="1.5" fill="url(#line)" opacity="0.85"/>
+    <text x="0" y="312" fill="#edf8fb" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="34" font-weight="600">3-5 分钟完成前置问卷</text>
+    <text x="0" y="364" fill="#9fb9c2" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="24">用于在线客服沟通与预约前准备，不构成投资建议、收益承诺或代客理财服务。</text>
+
+    <g transform="translate(0 446)">
+      <rect x="0" y="0" width="188" height="54" rx="8" fill="#0f2633" stroke="#42d7ff" stroke-opacity="0.34"/>
+      <text x="24" y="35" fill="#c9f7ff" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="22">需求诊断</text>
+      <rect x="214" y="0" width="188" height="54" rx="8" fill="#0f2633" stroke="#7cf6c8" stroke-opacity="0.34"/>
+      <text x="238" y="35" fill="#d4ffee" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="22">机构适配</text>
+      <rect x="428" y="0" width="188" height="54" rx="8" fill="#0f2633" stroke="#e0c36b" stroke-opacity="0.38"/>
+      <text x="452" y="35" fill="#fff2bf" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="22">预约 Demo</text>
+    </g>
+  </g>
+
+  <g transform="translate(1114 178)">
+    <rect x="-28" y="-28" width="342" height="420" rx="22" fill="#07131c" stroke="#c8f7ff" stroke-opacity="0.24"/>
+    <rect x="0" y="0" width="286" height="286" rx="16" fill="#eef9fb"/>
+    <g fill="#091822">
+      <rect x="24" y="24" width="64" height="64"/>
+      <rect x="38" y="38" width="36" height="36" fill="#eef9fb"/>
+      <rect x="52" y="52" width="8" height="8"/>
+      <rect x="198" y="24" width="64" height="64"/>
+      <rect x="212" y="38" width="36" height="36" fill="#eef9fb"/>
+      <rect x="226" y="52" width="8" height="8"/>
+      <rect x="24" y="198" width="64" height="64"/>
+      <rect x="38" y="212" width="36" height="36" fill="#eef9fb"/>
+      <rect x="52" y="226" width="8" height="8"/>
+      <rect x="112" y="28" width="22" height="22"/>
+      <rect x="150" y="34" width="18" height="18"/>
+      <rect x="104" y="72" width="18" height="18"/>
+      <rect x="142" y="86" width="36" height="18"/>
+      <rect x="194" y="112" width="24" height="24"/>
+      <rect x="236" y="118" width="18" height="18"/>
+      <rect x="106" y="126" width="22" height="50"/>
+      <rect x="140" y="126" width="18" height="18"/>
+      <rect x="170" y="140" width="50" height="18"/>
+      <rect x="236" y="156" width="22" height="50"/>
+      <rect x="114" y="202" width="34" height="18"/>
+      <rect x="166" y="196" width="18" height="36"/>
+      <rect x="202" y="208" width="56" height="18"/>
+      <rect x="112" y="246" width="18" height="18"/>
+      <rect x="150" y="246" width="34" height="18"/>
+      <rect x="210" y="244" width="18" height="18"/>
+      <rect x="244" y="244" width="18" height="18"/>
+    </g>
+    <rect x="0" y="0" width="286" height="286" rx="16" fill="none" stroke="#42d7ff" stroke-opacity="0.28" stroke-width="3"/>
+    <text x="143" y="340" text-anchor="middle" fill="#f4fbff" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="28" font-weight="700">扫码进入在线客服</text>
+    <text x="143" y="378" text-anchor="middle" fill="#9fb9c2" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="21">正式链接生成后替换二维码</text>
+  </g>
+
+  <circle cx="1260" cy="152" r="4" fill="#7cf6c8" filter="url(#softGlow)"/>
+  <circle cx="1036" cy="620" r="3" fill="#42d7ff" filter="url(#softGlow)"/>
+  <circle cx="1470" cy="604" r="3" fill="#e0c36b" filter="url(#softGlow)"/>
+</svg>

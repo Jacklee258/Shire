@@ -56,6 +56,7 @@
 - `youth-brain-challenge-24`: 少年脑力挑战：初中生思维力闯关（24题）
 - `tech-media-ops-intern-screening`: 技术类自媒体运营实习生招聘初筛问卷
 - `im-futures-intake-14`: IM 合约交易需求首访前置问卷（14题）
+- `institution-fit-intake-11`: 机构量化研发与风控基础设施需求诊断问卷（11题）
 
 ## Conventions
 
@@ -92,6 +93,8 @@
 当前还新增了 `grade7-history-midterm-gd-2026`，它采用广东历史卷常见的 `30 道选择题 + 3 道材料题` 结构，适合七年级下学期期中复习、阶段检测和课堂讲评使用。
 
 当前新增的 `youth-brain-challenge-24` 面向初中生家庭的一次性趣味测评冷启动，包装为“少年脑力挑战”，用于验证完成率、分享率和家长反馈，不使用“智商测试”或诊断式表达。
+
+当前新增的 `institution-fit-intake-11` 面向机构客户扫码进入在线客服或预约 Demo 前的前置诊断，聚焦客户类型、投研流程、数据源、回测与风控痛点、试点条件和后续跟进优先级，不构成投资建议、收益承诺或代客理财服务。
 
 ## Build Notes
 
