@@ -3,16 +3,16 @@ id: institution-fit-intake-11
 title: 量化投研适配性调研
 description: |
   面向机构客户扫码进入在线客服或预约 Demo 前的前置诊断问卷。
-  本试卷共 11 题，其中单选题 5 题、多选题 6 题，预计 5 分钟完成。
-  重点收集客户类型、团队规模、投研流程、主要市场、数据源、回测痛点、信号管理痛点、风控留痕需求、PoC 条件与试点意愿，用于判断机构适配度和准备后续沟通。
+  本试卷共 13 题，其中单选题 4 题、多选题 9 题，预计 5 分钟完成。
+  重点收集客户类型、团队规模、当前工具、主要市场、数据源、数据映射复杂度、回测痛点、信号管理痛点、风控留痕需求、PoC 条件、当前模式成熟度、需求触发与决策链路，用于判断机构适配度和准备后续沟通。
   本问卷只用于需求诊断和 Demo 准备，不构成投资建议、收益承诺或代客理财服务。
 tags: [institution-fit, quant-infra, customer-discovery, pre-sales, appointment]
 schema_version: 2
 format: qml-v2
-question_count: 11
+question_count: 13
 question_counts:
-  single: 5
-  multiple: 6
+  single: 4
+  multiple: 9
   short: 0
 estimated_duration_minutes: 5
 trait:
@@ -42,30 +42,33 @@ trait:
 
 您/贵机构最接近以下哪类？
 
-- A) 私募基金 / 资管团队 {traits=FIT:2,GOV:1}
-- B) 券商机构业务 / 财富管理 / 投顾服务团队 {traits=GOV:2,COMPLEX:1}
-- C) 独立投研 / 量化研究团队 {traits=FIT:2,AUTO:1}
-- D) 金融内容 / 策略服务团队 {traits=NURTURE:1,AUTO:1}
-- E) 其他机构 {traits=NURTURE:1}
+- A) 超级个人交易员 {traits=FIT:1,AUTO:1}
+- B) 私募基金 / 资管团队 {traits=FIT:2,GOV:1}
+- C) 券商机构业务 / 财富管理 / 投顾服务团队 {traits=GOV:2,COMPLEX:1}
+- D) 独立投研 / 量化研究团队 {traits=FIT:2,AUTO:1}
+- E) 金融内容 / 策略服务团队 {traits=NURTURE:1,AUTO:1}
+- F) 其他机构 {traits=NURTURE:1}
 
 ## Q2 [single] (0) {scoring=traits, answer_time=25s}
 
 当前直接参与投研、量化、交易或风控的人数大约是？
 
-- A) 1-3 人 {traits=NURTURE:1}
-- B) 4-10 人 {traits=FIT:2,AUTO:1}
-- C) 11-30 人 {traits=FIT:2,GOV:1}
-- D) 30 人以上 {traits=COMPLEX:2,GOV:2}
+- A) 1 人 {traits=NURTURE:1,AUTO:1}
+- B) 2-5 人 {traits=FIT:1,AUTO:1}
+- C) 6-10 人 {traits=FIT:2,AUTO:1}
+- D) 11-30 人 {traits=FIT:2,GOV:1}
+- E) 30 人以上 {traits=COMPLEX:2,GOV:2}
 
-## Q3 [single] (0) {scoring=traits, answer_time=30s}
+## Q3 [multiple] (1) {partial=true, answer_time=45s}
 
-目前贵机构的投研、回测或信号管理流程更接近哪种状态？
+目前主要用哪些方式管理研究、回测或信号？可多选。
 
-- A) 主要依赖 Excel、人工记录或临时表格 {traits=NURTURE:1,AUTO:1}
-- B) 主要依赖 Notebook / Python 脚本，流程由研究员各自维护 {traits=FIT:1,AUTO:2}
-- C) 已有自研系统，但数据、策略版本或复盘口径仍不统一 {traits=COMPLEX:1,GOV:2}
-- D) 已使用专业终端或量化平台，希望进一步形成内部流程 {traits=FIT:2,GOV:1}
-- E) 暂时没有稳定的投研或回测流程 {traits=NURTURE:2}
+- A*) Excel / 手工记录
+- B*) 通达信 / 同花顺 / 文华财经等交易终端
+- C*) Python 脚本等自研系统
+- D*) Wind / iFinD / Bloomberg 等数据终端
+- E*) 聚宽 / 米筐 / 优矿 / BigQuant 等量化平台
+- F*) 其他
 
 ## Q4 [multiple] (1) {partial=true, answer_time=45s}
 
@@ -87,17 +90,26 @@ trait:
 
 当前已使用或计划接入哪些数据源？可多选。
 
-- A*) 聚宽 / JQData
-- B*) Longbridge / 富途 / 老虎等 OpenAPI
-- C*) QMT / MiniQMT
-- D*) CTP
-- E*) Wind / iFinD / Bloomberg
-- F*) 券商柜台 / 极速柜台
-- G*) 交易所授权行情 / 专业行情商
-- H*) 内部数据
-- I*) 暂不确定
+- A*) 通达信等券商终端历史数据
+- B*) 聚宽 / JQData 等量化平台数据
+- C*) Longbridge / 富途 / 老虎等 OpenAPI 或开源数据
+- D*) 券商 QMT / MiniQMT / 柜台接口 / 期货公司 CTP 数据
+- E*) Wind / iFinD / 交易所授权行情 / 专业行情商
+- F*) 内部数据
+- G*) 暂不确定
 
 ## Q6 [multiple] (1) {partial=true, answer_time=45s}
+
+结合当前标的和数据来源，Demo 或 PoC 前最需要优先确认哪些数据映射问题？可多选。
+
+- A*) A 股日频数据、复权、行业/板块分类和标的池口径
+- B*) 实时行情、交易接口、券商权限或柜台接入条件
+- C*) 期货/期权合约映射、主力连续、换月、保证金和手续费口径
+- D*) 港美股行情权限、盘前盘后、复权、公司行动和交易日历
+- E*) 可转债、基金、FOF 或组合类数据的净值、持仓、归因和披露滞后
+- F*) 暂时不确定，需要先由售前协助梳理
+
+## Q7 [multiple] (1) {partial=true, answer_time=45s}
 
 当前回测或研究验证最明显的问题是什么？可多选。
 
@@ -108,40 +120,59 @@ trait:
 - E*) 暂时没有稳定回测流程
 - F*) 暂时没有明显回测痛点
 
-## Q7 [multiple] (1) {partial=true, answer_time=45s}
+## Q8 [multiple] (1) {partial=true, answer_time=45s}
 
 当前信号或策略运行最明显的问题是什么？可多选。
 
-- A*) 每天靠人工筛选、导表或手动运行脚本
-- B*) 任务失败、数据缺失或运行异常不容易及时发现
-- C*) 历史信号无法完整回填、追溯或复盘
+- A*) 每天靠人工筛选或手动运行
+- B*) 运行失败不容易发现
+- C*) 历史信号无法回填或追溯
 - D*) 信号、评分、预警和复盘没有统一看板
-- E*) 缺少定时调度、权限分工或任务交接机制
-- F*) 暂时没有明确的信号管理需求
+- E*) 暂时没有明确的信号管理需求
 
-## Q8 [multiple] (1) {partial=true, answer_time=45s}
+## Q9 [multiple] (1) {partial=true, answer_time=45s}
 
 贵机构是否需要以下风控、留痕或管理能力？可多选。
 
-- A*) 数据来源、处理口径和版本留痕
-- B*) 策略版本、参数、标的池和成本假设留痕
-- C*) 任务执行、失败重试和异常原因留痕
-- D*) 风险阈值、持仓暴露或异常波动提醒
-- E*) 审计、复盘或管理层报告
+- A*) 数据口径留痕
+- B*) 策略版本和参数留痕
+- C*) 任务执行和失败重试留痕
+- D*) 风险阈值和异常提醒
+- E*) 审计和复盘报告
 - F*) 暂时不需要
 
-## Q9 [multiple] (1) {partial=true, answer_time=45s}
+## Q10 [multiple] (1) {partial=true, answer_time=45s}
 
 如果进入小范围 PoC，贵机构目前可以提供哪些材料或条件？可多选。
 
 - A*) 1 个明确标的池
 - B*) 1-2 个已有策略、公式、脚本或研究规则
 - C*) 至少 1 个可用数据源或数据样例
-- D*) 1 名业务 owner 参与需求确认与验收
-- E*) 可以提供历史样例、日报、复盘表或现有流程截图
-- F*) 暂时无法提供
+- D*) 1 名业务 owner 参与验收
+- E*) 暂时无法提供
 
-## Q10 [single] (0) {scoring=traits, answer_time=30s}
+## Q11 [single] (0) {scoring=traits, answer_time=30s}
+
+当前研究或交易模式更接近哪种状态？
+
+- A) 成熟模式提效 {traits=FIT:2,AUTO:1}
+- B) 阶段有效固化 {traits=FIT:1,AUTO:1}
+- C) 仍在验证阶段 {traits=NURTURE:2}
+- D) 运营管理需要 {traits=GOV:2}
+- E) 暂不方便披露 {traits=NURTURE:1}
+
+## Q12 [multiple] (1) {partial=true, answer_time=45s}
+
+您/贵机构希望搭建量化投研基础设施解决什么问题？可多选。
+
+- A*) 解放人工盯盘
+- B*) 管理信号预警
+- C*) 固化交易模式
+- D*) 统一回测口径
+- E*) 替代零散脚本
+- F*) 增强风控留痕
+
+## Q13 [single] (0) {scoring=traits, answer_time=30s}
 
 本事项通常由谁推动或决策？
 
@@ -150,15 +181,4 @@ trait:
 - C) 公司管理层 {traits=GOV:2}
 - D) 投研 / 量化负责人 {traits=FIT:2,AUTO:1}
 - E) 风控 / 合规负责人 {traits=GOV:2,COMPLEX:1}
-- F) 多角色共同评估 {traits=COMPLEX:1,GOV:2}
-- G) 暂不确定 {traits=NURTURE:2}
-
-## Q11 [single] (0) {scoring=traits, answer_time=30s}
-
-如果后续进入在线客服沟通或预约 Demo，贵机构当前更接近哪种状态？
-
-- A) 已有明确场景和材料，希望尽快看 Demo 并评估 PoC {traits=FIT:2}
-- B) 痛点明确，但还需要先梳理数据源、策略样本或验收口径 {traits=FIT:1,NURTURE:1}
-- C) 涉及实时行情、交易接口或多系统集成，需要先评估可行性 {traits=COMPLEX:2}
-- D) 主要想了解方法论和参考案例，暂不急于试点 {traits=NURTURE:2}
-- E) 暂时只是了解，不进入试点或采购流程 {traits=NURTURE:2}
+- F) 其他 {traits=NURTURE:1}
