@@ -1,6 +1,6 @@
 ---
 id: institution-fit-intake-11
-title: 机构量化研发与风控基础设施需求诊断问卷（11题）
+title: 量化投研适配性调研
 description: |
   面向机构客户扫码进入在线客服或预约 Demo 前的前置诊断问卷。
   本试卷共 11 题，其中单选题 5 题、多选题 6 题，预计 5 分钟完成。
@@ -37,8 +37,6 @@ trait:
       - COMPLEX 较高时，优先确认数据授权、接口权限、实时性、回测粒度和交付边界。
       - GOV 或 AUTO 较高时，Demo 应分别突出风控留痕/管理看板或自动运行/异常提醒能力。
 ---
-
-![机构适配需求诊断邀请卡](./assets/invitation-card.svg)
 
 ## Q1 [single] (0) {scoring=traits, answer_time=25s}
 

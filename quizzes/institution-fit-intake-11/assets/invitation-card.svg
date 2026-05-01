@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800" role="img" aria-labelledby="title desc">
-  <title id="title">机构适配需求诊断邀请卡</title>
-  <desc id="desc">正式科技感客户邀请卡，提示客户扫码进入在线客服和预约页面完成需求诊断。</desc>
+  <title id="title">量化投研适配性调研邀请卡</title>
+  <desc id="desc">正式科技感客户邀请卡，提示客户扫码进入在线客服和预约页面完成量化投研适配性调研。</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#08111f"/>
@@ -37,7 +37,7 @@
     <rect x="0" y="0" width="326" height="38" rx="19" fill="#102f3c" stroke="#42d7ff" stroke-opacity="0.35"/>
     <text x="24" y="26" fill="#c5f4ff" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="20" letter-spacing="1">机构客户专属入口</text>
 
-    <text x="0" y="124" fill="#f4fbff" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="62" font-weight="700">机构适配需求诊断</text>
+    <text x="0" y="124" fill="#f4fbff" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="62" font-weight="700">量化投研适配性调研</text>
     <text x="0" y="188" fill="#b7d6df" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="28">量化研发 · 数据接入 · 回测复盘 · 风控留痕 · Demo 预约</text>
 
     <rect x="0" y="250" width="760" height="1.5" fill="url(#line)" opacity="0.85"/>
