@@ -3,17 +3,17 @@ id: calendar-spread-arbitrage-intake-25
 title: 套利交易系统需求调研问卷（25题）
 description: |
   用于客户访谈和一期系统需求确认。
-  本问卷共 25 题，其中单选题 7 题、多选题 11 题、简答题 7 题，预计 20 分钟完成。
-  重点了解客户正在做什么、哪些环节最费人、哪些规则已经固定、一期先做哪些功能，以及 30 万左右预算能否继续谈。
+  本问卷共 25 题，其中单选题 6 题、多选题 11 题、简答题 8 题，预计 20 分钟完成。
+  重点了解客户正在做什么、哪些环节最费人、哪些规则已经固定、一期先做哪些功能，以及可接受的预算区间。
   本问卷只用于需求沟通和方案拆分，不构成投资建议、收益承诺、代客理财服务或自动交易授权。
 tags: [futures, arbitrage, intake, quant-infra, customer-discovery, pre-sales]
 schema_version: 2
 format: qml-v2
 question_count: 25
 question_counts:
-  single: 7
+  single: 6
   multiple: 11
-  short: 7
+  short: 8
 estimated_duration_minutes: 20
 trait:
   dimensions: [ACTIVE, EARLY, PAIN, SIGNAL, RISK, AUTO, BUDGET]
@@ -29,7 +29,7 @@ trait:
     paired_dimensions:
       - ACTIVE/EARLY：看客户是真正在交易，还是还在观察验证。
       - PAIN/SIGNAL/RISK：看一期主要解决人力、信号还是风控问题。
-      - AUTO/BUDGET：看自动交易是否要拆到二期，以及预算是否能谈。
+      - AUTO/BUDGET：看自动交易是否要拆到二期，以及预算区间是否匹配。
     scoring_method:
       - 单选题用于辅助判断客户阶段和推进重点，不用于投资适当性或收益判断。
       - 多选题和简答题以原始信息采集为主，访谈后再人工整理方案和报价范围。
@@ -37,7 +37,7 @@ trait:
       - ACTIVE、PAIN、SIGNAL、RISK 较高时，可以推进一期“监控 + 信号 + 风控 + 复盘”。
       - EARLY 较高时，建议先做小范围验证或轻量看板。
       - AUTO 较高时，应明确自动下单、双腿成交、撤单追单和程序化报备属于二期或单独报价。
-      - BUDGET 较高时，应尽早确认 30 万左右的一期预算是否可讨论，以及功能验收和收益责任边界。
+      - BUDGET 较高时，应尽早确认一期预算区间、功能验收和收益责任边界。
 ---
 
 ## Q1 [multiple] (1) {partial=true, answer_time=45s}
@@ -296,12 +296,13 @@ trait:
 - C) 必须一开始就自动交易 {traits=AUTO:2,BUDGET:2}
 - D) 需要内部讨论 {traits=BUDGET:1}
 
-## Q25 [single] (0) {scoring=traits, answer_time=30s}
+## Q25 [short] {max=8, answer_time=3m}
 
-如果一期先不做自动下单，重点做套利机会监控、信号评分、风控预警、持仓跟踪和复盘，预算控制在 30 万左右，你们觉得是否符合预期？
+如果一期先不做自动下单，重点做套利机会监控、信号评分、风控预警、持仓跟踪和复盘，你们能接受的预算区间大概是多少？也可以写出“必须保留的功能”和“可以后置的功能”。
 
-- A) 可接受 {traits=BUDGET:1,ACTIVE:1}
-- B) 偏高 {traits=BUDGET:2}
-- C) 偏低 {traits=ACTIVE:1}
-- D) 要看功能范围 {traits=BUDGET:1}
-- E) 需要内部评估 {traits=BUDGET:1}
+[rubric]
+8 分：写出明确预算区间，并说明必须保留和可以后置的功能。
+6-7 分：写出大致预算或功能取舍，但范围仍需进一步确认。
+3-5 分：只写“看功能”“再评估”等方向性回答，缺少预算区间。
+0-2 分：没有预算信息，或回答与一期系统范围无关。
+[/rubric]
