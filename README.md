@@ -13,7 +13,7 @@
 │   │   └── quiz.md
 │   ├── career-interest-24/
 │   │   └── quiz.md
-│   ├── calendar-spread-arbitrage-intake-28/
+│   ├── calendar-spread-arbitrage-intake-25/
 │   │   └── quiz.md
 │   ├── chip-distribution/
 │   │   └── quiz.md
@@ -46,7 +46,7 @@
 
 - `ai-workstyle-50`: AI 时代工作方式问卷（50题）
 - `career-interest-24`: 职业兴趣问卷（24题）
-- `calendar-spread-arbitrage-intake-28`: 期限套利系统需求访谈问卷（28题）
+- `calendar-spread-arbitrage-intake-25`: 套利交易系统需求调研问卷（25题）
 - `chip-distribution`: 筹码分布入门测验（30题）
 - `common-test-2025`: 共性能力测试 2025
 - `grade7-history-midterm-gd-2026`: 七年级下学期期中历史试卷（广东风格·100分）
@@ -99,7 +99,7 @@
 
 当前新增的 `institution-fit-intake-11` 以“量化投研适配调研”为名称，面向机构客户扫码进入在线客服或预约 Demo 前的前置诊断，聚焦客户类型、投研流程、数据源、回测与风控痛点、试点条件和后续跟进优先级，不构成投资建议、收益承诺或代客理财服务。
 
-当前新增的 `calendar-spread-arbitrage-intake-28` 面向期限套利系统建设前的需求访谈，聚焦套利范围、数据接口、策略信号、执行方式、风控规则、Kanban 看板、回测验收、竞品参考与商务边界，用于把首访回答转化为一期方案、分阶段报价和交付验收口径，不构成投资建议或收益承诺。
+当前新增的 `calendar-spread-arbitrage-intake-25` 面向套利交易系统客户访谈和一期需求确认，聚焦交易现状、当前工具、人工流程、人员投入、策略信号、风控边界、一期系统形态和 30 万左右预算接受度，用于把首访回答转化为系统方案、功能边界和后续报价口径，不构成投资建议或收益承诺。
 
 ## Build Notes
 
