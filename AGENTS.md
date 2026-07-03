@@ -35,6 +35,7 @@
 - 资源文件只放在当前 quiz 目录下的 `assets/` 中，题面引用统一使用 `./assets/...`。
 - `single` 与 `multiple` 题使用 `## Qn [type] (points)`，`short` 题使用 `## Qn [short] {max=points, ...}`。
 - `single` 若使用 `{scoring=traits}`，则表示无正确答案的量表题；这类题统一使用 `(0)`，且不得使用 `*`。
+- `single` 或 `multiple` 若使用 `{scoring=completion}`，则表示作答计分题；这类题必须使用正分值，不设置正确答案，不使用 `*`，也不得写选项级 `traits`。
 - `short` 题必须包含 `[rubric]...[/rubric]`。
 - `answer_time` 使用 `s`、`m`、`h`，并保持在 parser 允许范围内。
 - 首题前和末题后如需展示欢迎图或结束图，只放单独一张 Markdown 图片。
@@ -46,6 +47,7 @@
 - 检查图片路径是否都指向当前 quiz 的 `./assets/`。
 - 检查 `tags` 是否为 YAML 字符串列表，且能准确描述该问卷主题。
 - 检查启用 `{scoring=traits}` 的 `single` 题是否没有 `*`，且选项 `traits` 只使用约定的 trait key。
+- 检查启用 `{scoring=completion}` 的 `single` / `multiple` 题是否没有 `*`、没有选项级 `traits`，且至少有一个可选项。
 - 检查题量统计与预计时长是否和实际题目一致。
 - 若新增、删除或重命名问卷，检查 `md-quiz-repo.yaml` 与 `README.md` 是否已同步反映该变更。
 - 若改动仓库结构或 manifest，确认 `README.md` 中的说明没有过期。

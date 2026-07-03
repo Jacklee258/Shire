@@ -3,15 +3,15 @@ id: parser-smoke-5
 title: 系统解析测试问卷（5题）
 description: |
   用于验证 md-quiz / QML 系统解析能力的最小样例问卷。
-  本试卷共 5 题，其中单选题 3 题、多选题 1 题、简答题 1 题，预计 5 分钟完成。
-  覆盖普通单选、多选、简答、traits 量表题、media 字段、welcome/end image、quiz 级与题目级评分块等常见解析要素。
+  本试卷共 5 题，其中单选题 2 题、多选题 2 题、简答题 1 题，预计 5 分钟完成。
+  覆盖普通单选、多选、简答、traits 量表题、作答计分题、media 字段、welcome/end image、quiz 级与题目级评分块等常见解析要素。
 tags: [parser, smoke-test, qml, demo, system-test]
 schema_version: 2
 format: qml-v2
 question_count: 5
 question_counts:
-  single: 3
-  multiple: 1
+  single: 2
+  multiple: 2
   short: 1
 estimated_duration_minutes: 5
 llm:
@@ -95,17 +95,13 @@ prompt_template=请只输出一个 0 到 {{max_points}} 的整数，不要输出
 本题为 traits 量表题，不设置正确答案，得分来自选项上的 `traits`。
 [/rubric]
 
-## Q5 [single] (2) {media=./assets/test.png, answer_time=30s, difficulty=demo}
+## Q5 [multiple] (2) {scoring=completion, media=./assets/test.png, answer_time=30s, difficulty=demo}
 
-这道题题头里的 `media=./assets/test.png` 最主要是为了测试什么？
+这道题用于验证作答计分题与题头扩展属性可以同时存在。请选择你希望这份 smoke 问卷覆盖的解析要素，可多选。
 
-- A*) 题头属性和资源路径是否能被系统正确识别
-- B) 图片内容本身的美观程度
-- C) traits 维度如何累计
-- D) 简答题的自动评分效果
-
-[rubric]
-这里的 `media` 字段主要用于测试题头属性和资源路径解析，不是为了测试图片审美、traits 计算或简答评分，因此答案是 A。
-[/rubric]
+- A) `scoring=completion`
+- B) `media=./assets/test.png`
+- C) 自定义题头属性 `difficulty=demo`
+- D) 无正确答案但选中即得分的选择题
 
 ![outro](./assets/test.png)

@@ -23,6 +23,7 @@ description: Use this skill as the default entry point when creating, editing, r
    - `quiz.md` 题头、题型、`answer_time`
    - 选项写法、`[rubric]`、`[llm]`
    - `single + {scoring=traits}` 量表题
+   - `single/multiple + {scoring=completion}` 作答计分题
    - traits 维度含义、分析建议与结果解释口径
    - `trait` 元数据是否与题面实际使用一致
    - `intro` / `outro` 图片是否需要补充，以及是否适合横幅展示

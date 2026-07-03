@@ -33,7 +33,7 @@
 
 每份 `quiz.md` 的 Front Matter 现支持 `tags`，用于分类、检索和后续筛选。
 其中 `common-test-2025` 与 `tech-media-ops-intern-screening` 属于招聘/筛选型混合问卷。
-`parser-smoke-5` 用于验证 welcome/end image、media、traits、`[rubric]`、`[llm]` 等解析要素。
+`parser-smoke-5` 用于验证 welcome/end image、media、traits、作答计分题、`[rubric]`、`[llm]` 等解析要素。
 
 ## 新增问卷时的同步要求
 
@@ -60,11 +60,12 @@
 
 ## 问卷路线图
 
-后续问卷建设建议优先考虑三类形态：
+后续问卷建设建议优先考虑四类形态：
 
 - 知识题 / 能力题：适合 `single`、`multiple`、`short`
 - 量表题 / 倾向题：适合 `single + {scoring=traits}`
-- 混合问卷：同时包含知识题与倾向题
+- 信息收集 / 完成度题：适合 `single/multiple + {scoring=completion}`
+- 混合问卷：同时包含知识题、倾向题或信息收集题
 
 ### 优先级建议
 
@@ -142,4 +143,5 @@
 3. 创建 `quizzes/<quiz_id>/quiz.md` 后，立即同步更新 `md-quiz-repo.yaml` 与 `README.md`
 4. 为问卷补齐 Front Matter：`id`、`title`、`description`、`tags`、`question_count`、`question_counts`、`estimated_duration_minutes`
 5. 若是倾向类问卷，优先用 `single + {scoring=traits}`
-6. 若是能力类问卷，优先用 `single` / `short`
+6. 若是只需要记录候选人选择、无需正确答案或维度评估的题目，优先用 `single/multiple + {scoring=completion}`
+7. 若是能力类问卷，优先用 `single` / `short`
