@@ -6,7 +6,7 @@ description: |
   本问卷共 22 题，其中单选题 13 题、多选题 3 题、简答题 6 题，预计 32 分钟完成。
   重点评估候选人的核心城市与资金资源、机构/高净值客户沉淀、历史转化能力、收益结构预期、合规稳定性、销售逻辑、团队协同和潜在风险信号。
   单选题按 traits 累计形成候选画像，简答题按 rubric 辅助面试官进行结构化评分；建议结合背景调查、历史业绩证明与模拟路演后再做最终判断。
-tags: [fundraising, private-fund, partner-screening, recruiting, wealth-management]
+tags: [fundraising, private-fund, partner-screening, partner-intake, wealth-management]
 schema_version: 2
 format: qml-v2
 question_count: 22
