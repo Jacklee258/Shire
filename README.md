@@ -62,7 +62,7 @@
 - `tech-media-ops-intern-screening`: 技术类自媒体运营实习生招聘初筛问卷
 - `im-futures-intake-14`: IM 合约交易需求首访前置问卷（14题）
 - `institution-fit-intake-11`: 量化投研适配调研
-- `fundraising-partner-screening-22`: 私募基金募资合伙人筛选问卷（22题）
+- `fundraising-partner-screening-22`: 募资合作意向沟通问卷
 
 ## Conventions
 
@@ -104,7 +104,7 @@
 
 当前新增的 `calendar-spread-arbitrage-intake-25` 面向套利交易系统客户访谈和一期需求确认，聚焦交易现状、当前工具、人工流程、人员投入、策略信号、风控边界、一期系统形态和 30 万左右预算接受度，用于把首访回答转化为系统方案、功能边界和后续报价口径，不构成投资建议或收益承诺。
 
-当前新增的 `fundraising-partner-screening-22` 面向私募基金募资合伙人招聘初筛，聚焦核心城市和资金资源、机构/高净值客户沉淀、历史转化能力、收益结构预期、合规稳定性、销售逻辑、团队协同和风险信号，用于支持面试前筛选、背景调查和模拟路演安排。
+当前新增的 `fundraising-partner-screening-22` 面向基金管理公司与潜在募资合作伙伴的合作意向沟通，聚焦核心城市和资金资源、机构/高净值客户沉淀、历史转化能力、收益结构预期、合规稳定性、销售逻辑、团队协同和风险信号，用于支持后续评估、背景核验和模拟路演安排。
 
 ## Build Notes
 
