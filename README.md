@@ -20,6 +20,8 @@
 │   ├── common-test-2025/
 │   │   ├── assets/
 │   │   └── quiz.md
+│   ├── gaokao-four-dimension-20/
+│   │   └── quiz.md
 │   ├── grade7-history-midterm-gd-2026/
 │   │   └── quiz.md
 │   ├── fundraising-partner-screening-22/
@@ -51,6 +53,7 @@
 - `calendar-spread-arbitrage-intake-25`: 套利交易系统需求调研问卷（25题）
 - `chip-distribution`: 筹码分布入门测验（30题）
 - `common-test-2025`: 共性能力测试 2025
+- `gaokao-four-dimension-20`: 高考报志愿四维测试简化版
 - `grade7-history-midterm-gd-2026`: 七年级下学期期中历史试卷（广东风格·100分）
 - `hnw-strategy-fit-14`: 高净值客户策略适配画像问卷（14题）
 - `leadership-execution-24`: 领导力与执行力倾向问卷（24题）
@@ -105,6 +108,8 @@
 当前新增的 `calendar-spread-arbitrage-intake-25` 面向套利交易系统客户访谈和一期需求确认，聚焦交易现状、当前工具、人工流程、人员投入、策略信号、风控边界、一期系统形态和 30 万左右预算接受度，用于把首访回答转化为系统方案、功能边界和后续报价口径，不构成投资建议或收益承诺。
 
 当前新增的 `fundraising-partner-screening-22` 面向基金管理公司与潜在募资合作伙伴的合作意向沟通，聚焦核心城市和资金资源、机构/高净值客户沉淀、历史转化能力、收益结构预期、合规稳定性、销售逻辑、团队协同和风险信号，用于支持后续评估、背景核验和模拟路演安排。
+
+当前新增的 `gaokao-four-dimension-20` 面向高考志愿直播间免费测评，使用 20 道单选题评估学校、专业、城市、就业四个志愿决策维度，用于帮助考生和家长初步排序取舍，不预测录取概率，也不替代省考试院政策、高校招生章程和正式志愿填报系统。
 
 ## Build Notes
 
