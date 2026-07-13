@@ -47,6 +47,7 @@
 ## Quiz List
 
 - `ai-workstyle-50`: AI 时代工作方式问卷（50题）
+- `aidc-shaoguan-project-owner-screening-24`: 韶关 AIDC 智算中心项目负责人招聘深筛问卷
 - `career-interest-24`: 职业兴趣问卷（24题）
 - `calendar-spread-arbitrage-intake-25`: 套利交易系统需求调研问卷（25题）
 - `chip-distribution`: 筹码分布入门测验（30题）
@@ -105,6 +106,8 @@
 当前新增的 `calendar-spread-arbitrage-intake-25` 面向套利交易系统客户访谈和一期需求确认，聚焦交易现状、当前工具、人工流程、人员投入、策略信号、风控边界、一期系统形态和 30 万左右预算接受度，用于把首访回答转化为系统方案、功能边界和后续报价口径，不构成投资建议或收益承诺。
 
 当前新增的 `fundraising-partner-screening-22` 面向私募基金募资合伙人招聘初筛，聚焦核心城市和资金资源、机构/高净值客户沉淀、历史转化能力、收益结构预期、合规稳定性、销售逻辑、团队协同和风险信号，用于支持面试前筛选、背景调查和模拟路演安排。
+
+当前新增的 `aidc-shaoguan-project-owner-screening-24` 面向韶关 AIDC 智算中心项目负责人招聘深筛，聚焦数据中心 / 智算中心项目经验、大厂或运营商背景、政府土地、电力能耗、报批报建、客户锁单、投融资测算和跨线执行能力，用于正式面试前判断候选人是否具备项目总负责人的真实落地能力。
 
 ## Build Notes
 
