@@ -1,9 +1,9 @@
 ---
 id: aidc-shaoguan-project-owner-screening-24
-title: 韶关 AIDC 智算中心项目负责人招聘深筛问卷
+title: 众选云AIDC 智算中心项目负责人首轮招聘问卷
 description: |
   面向韶关 AIDC 智算中心项目负责人候选人的面试前深筛问卷。
-  本试卷共 24 题，其中单选题 12 题、多选题 4 题、简答题 8 题，预计 35 分钟完成。
+  本试卷共 24 题，其中单选题 12 题、多选题 4 题、简答题 8 题，预计 96 分钟完成。
   重点评估候选人是否具备数据中心 / 智算中心项目从选址锁地、政府预审、客户锁单、方案测算、审批开工到交付运营的真实推进经验。
   本问卷特别关注阿里云、腾讯云、华为云、百度智能云、运营商或大型 IDC / AIDC 项目经历，以及电力能耗、报批报建、客户锁单、投融资测算和跨线协同能力。
   单选题按 traits 累计形成候选画像，简答题按 rubric 辅助面试官进行结构化评分；建议结合简历、项目证明、背调、客户资源核验和面试追问后再做最终判断。
@@ -15,7 +15,7 @@ question_counts:
   single: 12
   multiple: 4
   short: 8
-estimated_duration_minutes: 35
+estimated_duration_minutes: 96
 trait:
   dimensions: [IDC_EXP, BIG_TECH, GOV_LAND, POWER_ENERGY, TECH_SOLUTION, CLIENT_ORDER, APPROVAL, FIN_MODEL, EXECUTION, REDFLAG]
   dimension_meanings:
@@ -62,7 +62,7 @@ llm:
     回答：{{answer}}
 ---
 
-## Q1 [short] {max=6, answer_time=2m}
+## Q1 [short] {max=6, answer_time=10m}
 
 请填写候选人基本信息：姓名、当前城市、可接受的常驻 / 出差安排、过往主要任职机构、参与过的数据中心 / 智算中心 / 算力基础设施项目名称和个人角色。
 
@@ -73,7 +73,7 @@ llm:
 4) 若只写泛泛履历、没有项目名称或无法看出个人职责，应明显扣分。
 [/rubric]
 
-## Q2 [multiple] (1) {partial=true, answer_time=45s}
+## Q2 [multiple] (1) {partial=true, answer_time=1m}
 
 您深度参与过以下哪些类型的项目？可多选。
 
@@ -90,7 +90,7 @@ llm:
 本题用于采集项目类型覆盖面。选择越多不代表越好，面试时应重点核验候选人是否能说明具体项目、角色、容量、周期和交付结果。
 [/rubric]
 
-## Q3 [single] (0) {scoring=traits, answer_time=35s}
+## Q3 [single] (0) {scoring=traits, answer_time=1m}
 
 您与阿里云、腾讯云、华为云、百度智能云、运营商或大型 IDC / AIDC 服务商的经历最接近：
 
@@ -101,7 +101,7 @@ llm:
 - E) 主要参与地方园区或中小型机房项目，尚无大厂或大型服务商项目经历 {traits=IDC_EXP:1,REDFLAG:1}
 - F) 暂无相关经历 {traits=REDFLAG:2}
 
-## Q4 [single] (0) {scoring=traits, answer_time=30s}
+## Q4 [single] (0) {scoring=traits, answer_time=1m}
 
 您过往在数据中心 / 智算中心项目中最接近的角色是：
 
@@ -112,7 +112,7 @@ llm:
 - E) 财务 / 投融资 / 法务负责人，主导投资测算、合作结构和融资条件 {traits=FIN_MODEL:2,EXECUTION:1}
 - F) 主要是专项支持或外围配合，尚未承担项目主责 {traits=REDFLAG:1}
 
-## Q5 [single] (0) {scoring=traits, answer_time=30s}
+## Q5 [single] (0) {scoring=traits, answer_time=1m}
 
 您主导或深度参与过的最大数据中心 / 智算中心项目规模更接近：
 
@@ -123,7 +123,7 @@ llm:
 - E) 8000 个机柜以上，或 60MW 以上负荷，且能说明电力、审批和交付路径 {traits=IDC_EXP:2,POWER_ENERGY:2,EXECUTION:2}
 - F) 不便披露，也暂时无法提供可核验项目线索 {traits=REDFLAG:2}
 
-## Q6 [short] {max=12, answer_time=4m}
+## Q6 [short] {max=12, answer_time=10m}
 
 请描述一个您深度参与过的数据中心 / 智算中心项目，从立项、选址、方案、审批、建设到交付的关键节点。请尽量写清项目所在地、建设规模、负荷容量、客户或用途、您的角色、关键难点和最终结果。
 
@@ -136,7 +136,7 @@ llm:
 6) 若回答只有概念堆砌、没有项目事实或回避个人职责，应明显扣分。
 [/rubric]
 
-## Q7 [short] {max=10, answer_time=3m}
+## Q7 [short] {max=10, answer_time=10m}
 
 如果您入职后负责韶关 AIDC 项目，首月最优先验证哪 5 件事？请按优先级说明每件事的目标、对接对象和输出物。
 
@@ -148,7 +148,7 @@ llm:
 5) 表达具体可执行，能看出 30 天内的推进节奏。
 [/rubric]
 
-## Q8 [multiple] (1) {partial=true, answer_time=45s}
+## Q8 [multiple] (1) {partial=true, answer_time=1m}
 
 候选地块对比时，您认为必须优先核查哪些因素？可多选。
 
@@ -165,7 +165,7 @@ llm:
 本题用于识别候选人是否理解地块筛选的关键约束。A-F 是核心核查项；G 可作为配套信息但不是优先门槛；H 不应作为决策依据。
 [/rubric]
 
-## Q9 [single] (0) {scoring=traits, answer_time=30s}
+## Q9 [single] (0) {scoring=traits, answer_time=1m}
 
 假设韶关已有 3 个候选地块，您判断哪个地块可以进入下一阶段时，最接近以下哪种做法？
 
@@ -176,7 +176,7 @@ llm:
 - E) 优先选择面积最大、形象最好、后续扩展空间最大的地块 {traits=REDFLAG:1}
 - F) 主要依赖政府推荐，不单独建立淘汰框架 {traits=REDFLAG:2}
 
-## Q10 [single] (0) {scoring=traits, answer_time=30s}
+## Q10 [single] (0) {scoring=traits, answer_time=1m}
 
 韶关项目政府预审阶段，您会优先推动哪种沟通路径？
 
@@ -187,7 +187,7 @@ llm:
 - E) 先找设计院出完整方案，用方案倒逼政府部门表态 {traits=TECH_SOLUTION:1,REDFLAG:1}
 - F) 主要依靠领导或中间人关系推进，暂不需要结构化会议纪要 {traits=REDFLAG:2}
 
-## Q11 [single] (0) {scoring=traits, answer_time=30s}
+## Q11 [single] (0) {scoring=traits, answer_time=1m}
 
 您主导或深度参与 AIDC / IDC 项目报批报建或牌照相关事项的经历最接近：
 
@@ -198,7 +198,7 @@ llm:
 - E) 主要依赖设计院、顾问或政府代办，个人负责协调跟进 {traits=GOV_LAND:1,EXECUTION:1,REDFLAG:1}
 - F) 只了解概念，未深度参与具体办理 {traits=REDFLAG:2}
 
-## Q12 [short] {max=12, answer_time=4m}
+## Q12 [short] {max=12, answer_time=10m}
 
 请列出 AIDC 项目开工前通常需要完成或明确的审批路径和关键前置条件。请尽量按事项、主管部门、材料 / 口径、预计周期和依赖关系描述。
 
@@ -211,7 +211,7 @@ llm:
 6) 若把审批描述成单一备案或只写“找政府协调”，应明显扣分。
 [/rubric]
 
-## Q13 [short] {max=12, answer_time=4m}
+## Q13 [short] {max=12, answer_time=10m}
 
 电力与能耗是项目生死线。请说明您会如何对韶关项目一期负荷可接入性进行初判，包括需要问谁、问什么、拿什么材料、如何判断周期和成本。
 
@@ -224,7 +224,7 @@ llm:
 6) 若回答认为电力可在摘牌后再解决，应明显扣分。
 [/rubric]
 
-## Q14 [single] (0) {scoring=traits, answer_time=30s}
+## Q14 [single] (0) {scoring=traits, answer_time=1m}
 
 您对高密机柜、液冷、HVDC、GPU/NPU、网络架构和运维标准的熟悉程度更接近：
 
@@ -234,7 +234,7 @@ llm:
 - D) 主要从管理或商务角度理解，对技术细节依赖设计院或供应商 {traits=EXECUTION:1,REDFLAG:1}
 - E) 只了解行业概念和趋势，未参与具体方案落地 {traits=REDFLAG:2}
 
-## Q15 [multiple] (1) {partial=true, answer_time=45s}
+## Q15 [multiple] (1) {partial=true, answer_time=1m}
 
 一期方案测算中，您认为必须先锁定哪些技术和商业参数？可多选。
 
@@ -251,7 +251,7 @@ llm:
 本题用于判断方案测算是否把技术、客户、电力、资金和建设周期联动。A-F 是核心参数；G 不是一期测算关键门槛；H 会带来重大推进风险。
 [/rubric]
 
-## Q16 [single] (0) {scoring=traits, answer_time=30s}
+## Q16 [single] (0) {scoring=traits, answer_time=1m}
 
 如果潜在客户只给了“未来可能需要算力”的泛泛意向，您会如何判断是真需求还是假需求？
 
@@ -261,7 +261,7 @@ llm:
 - D) 只要客户是大厂或央国企，就可以先按强需求进入投资测算 {traits=REDFLAG:2}
 - E) 客户需求可以后置，先把土地和机房建起来再招商 {traits=REDFLAG:2}
 
-## Q17 [short] {max=10, answer_time=3m}
+## Q17 [short] {max=10, answer_time=10m}
 
 请设计一张 AIDC 客户需求访谈表。请列出您会问客户哪些问题，以及每类问题如何帮助判断合同可能性。
 
@@ -273,7 +273,7 @@ llm:
 5) 能把访谈结果转化为客户需求访谈表、机会等级和下一步动作。
 [/rubric]
 
-## Q18 [single] (0) {scoring=traits, answer_time=30s}
+## Q18 [single] (0) {scoring=traits, answer_time=1m}
 
 在韶关 AIDC 项目五条线中，您最有把握直接牵头的是：
 
@@ -284,7 +284,7 @@ llm:
 - E) 投融资法务线：一期投资测算、融资结构、政府支持、合同条件和退出路径 {traits=FIN_MODEL:2,EXECUTION:1}
 - F) 都可以参与，但目前没有一条线能独立牵头 {traits=REDFLAG:1}
 
-## Q19 [short] {max=12, answer_time=3m}
+## Q19 [short] {max=12, answer_time=10m}
 
 如果土地、电力、客户、融资四条线互相卡住：土地方要投资承诺，银行要客户订单，客户要交付时间，供电要明确负荷方案。您会如何拆解优先级并推动闭环？
 
@@ -297,7 +297,7 @@ llm:
 6) 若只回答“找领导协调”或“先签客户再说”，应明显扣分。
 [/rubric]
 
-## Q20 [multiple] (1) {partial=true, answer_time=45s}
+## Q20 [multiple] (1) {partial=true, answer_time=1m}
 
 一期投资测算中，您认为必须包含哪些成本和收入项？可多选。
 
@@ -314,7 +314,7 @@ llm:
 本题用于判断投资测算完整性。A-F 是核心项；G 可作为运营或招商预算但不是一期投资闭环核心；H 反映财务闭环意识不足。
 [/rubric]
 
-## Q21 [single] (0) {scoring=traits, answer_time=30s}
+## Q21 [single] (0) {scoring=traits, answer_time=1m}
 
 对于融资、政府支持、客户订单、施工方垫资和设备账期之间的关系，您的理解更接近：
 
@@ -324,7 +324,7 @@ llm:
 - D) 主要依靠政府补贴或平台公司兜底，商业订单可以后置 {traits=REDFLAG:2}
 - E) 主要靠施工方和设备方垫资，项目现金流后续自然会解决 {traits=REDFLAG:2}
 
-## Q22 [single] (0) {scoring=traits, answer_time=30s}
+## Q22 [single] (0) {scoring=traits, answer_time=1m}
 
 您认为韶关项目进入下一阶段最关键的决策门槛是：
 
@@ -334,7 +334,7 @@ llm:
 - D) 只要技术方案先进、PUE 目标漂亮，就可以先推动立项 {traits=TECH_SOLUTION:1,REDFLAG:1}
 - E) 只要资金方愿意投，就可以先推进土地和建设 {traits=FIN_MODEL:1,REDFLAG:1}
 
-## Q23 [single] (0) {scoring=traits, answer_time=30s}
+## Q23 [single] (0) {scoring=traits, answer_time=1m}
 
 面对过往项目中的失败、延期、预算超支、审批卡点或交付风险，您的处理方式最接近：
 
@@ -345,7 +345,7 @@ llm:
 - E) 过往项目基本没有重大失败或风险，暂时没有可复盘案例 {traits=REDFLAG:1}
 - F) 遇到重大风险通常由其他部门负责，自己不直接参与处置 {traits=REDFLAG:2}
 
-## Q24 [short] {max=12, answer_time=3m}
+## Q24 [short] {max=12, answer_time=10m}
 
 如果您明天入职，请写出韶关 AIDC 项目 30 天推进计划。请按周列出关键动作、对接对象、交付物和需要公司支持的事项。
 
