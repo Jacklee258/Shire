@@ -49,7 +49,7 @@
 ## Quiz List
 
 - `ai-workstyle-50`: AI 时代工作方式问卷（50题）
-- `aidc-shaoguan-project-owner-screening-24`: 韶关 AIDC 智算中心项目负责人招聘深筛问卷
+- `aidc-shaoguan-project-owner-screening-24`: 众选云AIDC 智算中心项目负责人首轮招聘问卷
 - `career-interest-24`: 职业兴趣问卷（24题）
 - `calendar-spread-arbitrage-intake-25`: 套利交易系统需求调研问卷（25题）
 - `chip-distribution`: 筹码分布入门测验（30题）
@@ -112,7 +112,7 @@
 
 当前新增的 `gaokao-four-dimension-20` 面向高考志愿直播间免费测评，使用 20 道单选题评估学校、专业、城市、就业四个志愿决策维度，用于帮助考生和家长初步排序取舍，不预测录取概率，也不替代省考试院政策、高校招生章程和正式志愿填报系统。
 
-当前新增的 `aidc-shaoguan-project-owner-screening-24` 面向韶关 AIDC 智算中心项目负责人招聘深筛，聚焦数据中心 / 智算中心项目经验、大厂或运营商背景、政府土地、电力能耗、报批报建、客户锁单、投融资测算和跨线执行能力，用于正式面试前判断候选人是否具备项目总负责人的真实落地能力。
+当前新增的 `aidc-shaoguan-project-owner-screening-24` 是众选云AIDC 智算中心项目负责人首轮招聘问卷，聚焦数据中心 / 智算中心项目经验、大厂或运营商背景、政府土地、电力能耗、报批报建、客户锁单、投融资测算和跨线执行能力，用于正式面试前判断候选人是否具备项目总负责人的真实落地能力。
 
 ## Build Notes
 
