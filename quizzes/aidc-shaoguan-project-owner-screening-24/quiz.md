@@ -3,19 +3,19 @@ id: aidc-shaoguan-project-owner-screening-24
 title: 众选云AIDC 智算中心项目负责人首轮招聘问卷
 description: |
   面向韶关 AIDC 智算中心项目负责人候选人的面试前深筛问卷。
-  本试卷共 24 题，其中单选题 12 题、多选题 4 题、简答题 8 题，预计 96 分钟完成。
+  本试卷共 23 题，其中单选题 11 题、多选题 4 题、简答题 8 题，预计 95 分钟完成。
   重点评估候选人是否具备数据中心 / 智算中心项目从选址锁地、政府预审、客户锁单、方案测算、审批开工到交付运营的真实推进经验。
   本问卷特别关注阿里云、腾讯云、华为云、百度智能云、运营商或大型 IDC / AIDC 项目经历，以及电力能耗、报批报建、客户锁单、投融资测算和跨线协同能力。
   单选题按 traits 累计形成候选画像，简答题按 rubric 辅助面试官进行结构化评分；建议结合简历、项目证明、背调、客户资源核验和面试追问后再做最终判断。
 tags: [recruitment, aidc, data-center, shaoguan, project-owner, infrastructure]
 schema_version: 2
 format: qml-v2
-question_count: 24
+question_count: 23
 question_counts:
-  single: 12
+  single: 11
   multiple: 4
   short: 8
-estimated_duration_minutes: 96
+estimated_duration_minutes: 95
 trait:
   dimensions: [IDC_EXP, BIG_TECH, GOV_LAND, POWER_ENERGY, TECH_SOLUTION, CLIENT_ORDER, APPROVAL, FIN_MODEL, EXECUTION, REDFLAG]
   dimension_meanings:
@@ -326,16 +326,6 @@ llm:
 
 ## Q22 [single] (0) {scoring=traits, answer_time=1m}
 
-您认为韶关项目进入下一阶段最关键的决策门槛是：
-
-- A) 土地可建、电力可接、能耗可批、客户真实、资金闭环五项同时有明确口径 {traits=EXECUTION:2,GOV_LAND:1,POWER_ENERGY:1,CLIENT_ORDER:1,FIN_MODEL:1}
-- B) 只要政府态度积极并愿意给地，就可以先进入下一阶段 {traits=GOV_LAND:1,REDFLAG:1}
-- C) 只要客户需求足够大，就可以边建边解决土地、电力和审批 {traits=CLIENT_ORDER:1,REDFLAG:2}
-- D) 只要技术方案先进、PUE 目标漂亮，就可以先推动立项 {traits=TECH_SOLUTION:1,REDFLAG:1}
-- E) 只要资金方愿意投，就可以先推进土地和建设 {traits=FIN_MODEL:1,REDFLAG:1}
-
-## Q23 [single] (0) {scoring=traits, answer_time=1m}
-
 面对过往项目中的失败、延期、预算超支、审批卡点或交付风险，您的处理方式最接近：
 
 - A) 能坦诚复盘风险来源，快速拆解责任、时间线、替代方案和升级机制，并沉淀到后续项目流程 {traits=EXECUTION:2,IDC_EXP:1,APPROVAL:1}
@@ -345,7 +335,7 @@ llm:
 - E) 过往项目基本没有重大失败或风险，暂时没有可复盘案例 {traits=REDFLAG:1}
 - F) 遇到重大风险通常由其他部门负责，自己不直接参与处置 {traits=REDFLAG:2}
 
-## Q24 [short] {max=12, answer_time=10m}
+## Q23 [short] {max=12, answer_time=10m}
 
 如果您明天入职，请写出韶关 AIDC 项目 30 天推进计划。请按周列出关键动作、对接对象、交付物和需要公司支持的事项。
 
